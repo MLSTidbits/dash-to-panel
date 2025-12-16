@@ -6,3 +6,28 @@ dash-to-panel@jderose9.github.com*.zip
 po/dash-to-panel.pot
 ui/*.ui.h
 node_modules/
+.vscode/
+
+build/
+dist/
+_build/
+_po/
+
+changelog
+
+*.gz
+*.deb
+
+# Ignore the following from the `debian` directory since
+# they are generated during the build process and should
+# not be committed to the repository.
+debian/.debhelper/
+debian/files
+debian/*.ex
+debian/*.debhelper
+debian/*.substvars
+debian/dash-to-panel/
+
+doc/version
+man/dash-to-panel.1
+man/dash-to-panel.conf.5
