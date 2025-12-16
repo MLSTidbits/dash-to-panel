@@ -25,7 +25,7 @@
                 <property name="halign">center</property>
                 <property name="label" translatable="yes">GitHub</property>
                 <property name="receives-default">True</property>
-                <property name="uri">https://github.com/home-sweet-gnome/dash-to-panel</property>
+                <property name="uri">https://github.com/mlstidbits/dash-to-panel</property>
               </object>
             </child>
           </object>
@@ -93,7 +93,7 @@ See the &lt;a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"&gt;G
               <child>
                 <object class="GtkLabel">
                   <property name="justify">center</property>
-                  <property name="label" translatable="yes">Sponsored and originally developed by</property>
+                  <property name="label" translatable="yes">Originally developed by</property>
                   <property name="wrap">True</property>
                 </object>
               </child>

@@ -5,6 +5,8 @@ MODULES = src/*.js src/stylesheet.css metadata.json COPYING README.md
 UI_MODULES = ui/*.ui
 IMAGES = ./* ../media/design/svg/dash-to-panel-logo-light.svg
 
+VERSION = $(shell cat doc/version)
+
 TOLOCALIZE = src/extension.js src/prefs.js src/appIcons.js src/taskbar.js
 MSGSRC = $(wildcard po/*.po)
 ifeq ($(strip $(DESTDIR)),)
@@ -34,7 +36,7 @@ else
 	FILESUFFIX =
 endif
 
-all: extension
+all: _build
 
 clean:
 	rm -f ./schemas/gschemas.compiled
@@ -87,7 +89,7 @@ zip-file: _build
 	mv _build/$(UUID)$(FILESUFFIX).zip ./
 	-rm -fR _build
 
-_build: all
+_build: extension
 	-rm -fR ./_build
 	mkdir -p _build
 	cp $(MODULES) _build
@@ -107,7 +109,7 @@ _build: all
 		cp $$l $$lf/LC_MESSAGES/dash-to-panel.mo; \
 	done;
 ifneq ($(and $(COMMIT),$(VERSION)),)
-	sed -i 's/"version": [[:digit:]][[:digit:]]*/"version": $(VERSION),\n"commit": "$(COMMIT)"/'  _build/metadata.json;
+	sed -i 's/"version": [[:digit:]][[:digit:]]*/"version": \"$(VERSION)\",\n"commit": "$(COMMIT)"/'  _build/metadata.json;
 else ifneq ($(VERSION),)
-	sed -i 's/"version": [[:digit:]][[:digit:]]*/"version": $(VERSION)/'  _build/metadata.json;
+	sed -i 's/"version": [[:digit:]][[:digit:]]*/"version": \"$(VERSION)\"/'  _build/metadata.json;
 endif

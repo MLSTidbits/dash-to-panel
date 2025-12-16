@@ -47,7 +47,7 @@ const DEFAULT_PADDING_SIZES = [32, 24, 16, 12, 8, 4, 0, -1]
 const LENGTH_MARKS = [100, 90, 80, 70, 60, 50, 40, 30, 20]
 const MAX_WINDOW_INDICATOR = 4
 
-const SCHEMA_PATH = '/org/gnome/shell/extensions/dash-to-panel/'
+const SCHEMA_PATH = '/usr/share/glib-2.0/schemas'
 
 /**
  * This function was copied from the activities-config extension
