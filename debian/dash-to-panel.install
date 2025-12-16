@@ -1,0 +1,11 @@
+_build/locale/* usr/share/locale/
+
+_build/*.js usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/
+_build/metadata.json usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/
+
+_build/stylesheet.css usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/
+
+_build/img usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/
+_build/ui usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/
+
+_build/schemas/*.xml usr/share/glib-2.0/schemas/
