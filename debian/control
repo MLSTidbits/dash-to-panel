@@ -14,7 +14,7 @@ Package: dash-to-panel
 Architecture: any
 Multi-Arch: foreign
 Depends:
- gnome-shell (>= 46)
+ gnome-shell (>= 46), arcmenu
 Suggests:
  gnome-tweaks, gnome-extensions-manager
 Description: Dash to Panel GNOME Shell Extension
