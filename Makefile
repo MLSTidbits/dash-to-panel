@@ -40,6 +40,9 @@ all: _build
 
 clean:
 	rm -f ./schemas/gschemas.compiled
+	rm -f ./po/*.mo
+	rm -fR ./_build
+
 
 extension: ./schemas/gschemas.compiled $(MSGSRC:.po=.mo)
 
