@@ -6,3 +6,10 @@ dash-to-panel@jderose9.github.com*.zip
 po/dash-to-panel.pot
 ui/*.ui.h
 node_modules/
+
+debian/dash-to-panel/
+debian/changelog
+debian/.debhelper/
+
+debian/files
+debian/*.substvars
