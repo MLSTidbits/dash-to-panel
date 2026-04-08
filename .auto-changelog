@@ -3,7 +3,7 @@
   "template": "compact",
   "commitLimit": "3",
   "backfillLimit": "3",
-  "commitPattern": "^(Add |Fix |Revert |Docs |Bump )",
+  "commitPattern": "^(Add\\ |Fix\\ |Revert\\ |Docs\\ |Bump\\ )",
   "hideCredit": false,
   "startingVersion": "60",
   "hideEmptyReleases": true
