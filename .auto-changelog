@@ -1,8 +1,9 @@
 {
   "output": "CHANGELOG.md",
   "template": "compact",
-  "commitLimit": "1",
-  "backfillLimit": "0",
+  "commitLimit": "3",
+  "backfillLimit": "3",
+  "commitPattern": "^(Add |Fix |Revert |Docs |Bump )",
   "hideCredit": false,
   "startingVersion": "60",
   "hideEmptyReleases": true
