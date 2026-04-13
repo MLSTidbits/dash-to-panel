@@ -13,3 +13,5 @@ debian/.debhelper/
 
 debian/files
 debian/*.substvars
+
+_build/
