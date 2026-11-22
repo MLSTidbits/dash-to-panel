@@ -3,7 +3,6 @@
   "template": "keepachangelog",
   "commitLimit": "3",
   "backfillLimit": "3",
-  "commitPattern": "^(Add|Fix|Revert|Docs|Bump)",
   "hideCredit": false,
   "startingVersion": "60"
 }
